@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1>modal project</h1>
+        <button class="btn modal-btn">
+          open modal
+        </button>
+      </div>
+    </header>
+
+    <!-- Enhanced Modal -->
+    <div class="modal-overlay backdrop-blur">
+      <div class="modal-container">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        
+        <div class="tabs">
+          <button class="tab active" data-tab="info">Info</button>
+          <button class="tab" data-tab="gallery">Gallery</button>
+          <button class="tab" data-tab="contact">Contact</button>
+        </div>
+
+        <div id="info" class="tab-content active">
+          <h3>Welcome</h3>
+          <p>This is an enhanced modal with multiple features and tabs.</p>
+        </div>
+
+        <div id="gallery" class="tab-content">
+          <h3>Gallery</h3>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="sumber-daya-modal.webp" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+              <img src="Tips-Mempersiapkan-Modal-Untuk-Membangun-Usaha.avif" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+              <img src="jenis-jenis-modal.webp" alt="Image 3">
+            </div>
+          </div>
+        </div>
+        
+
+        <div id="contact" class="tab-content">
+          <h3>Contact Us</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
